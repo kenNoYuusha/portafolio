@@ -1,0 +1,17 @@
+---
+import { EmailInput } from '../components/EmailInput'
+---
+<div id="home" class="flex flex-col justify-center items-center mt-8 sm:flex-row p-4 gap-4">
+  <div class="flex flex-col gap-8 basis-3/5 ">
+    <h1 class="font-bold text-2xl">Jorge Luis Estevez desarrollador <strong class="text-sky-500">frontend</strong></h1>
+    <div>
+      <p class="mb-4">Soy un entusiasta del diseño web que disfruta transformando ideas en realidad a travéz del código. Con experiencia en HTML, CSS y Javascript, me dedico a construir sitios web que no solo se ven bien, sino que también ofrecen una experiencia de usuario fluida y accesible. </p>
+      <p>Estoy en busca de oportunidades donde pueda colaborar y seguir creciendo profesionalmente</p>
+    </div>
+    <a href="CV-Jorge_Estevez.pdf" download="CV Jorge Estevez" class="px-4 py-3 rounded-md bg-sky-600 w-40 grid place-content-center">Descargar CV</a>
+    <EmailInput client:load/>
+  </div>
+  <div class="w-full max-w-72 hidden sm:block basis-2/5">
+    <img src="profile-img.png" alt="profile-photo" class="w-full object-cover rounded-full">
+  </div>
+</div>

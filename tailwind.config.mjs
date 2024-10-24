@@ -19,6 +19,23 @@ export default {
           900: "#1e3a8a",
           950: "#172554",
         },
+        mainBackground: '#282C33'
+      },
+      fontFamily : {
+        firaCode : ['Fira Code', 'monospace']
+      },
+      gridTemplateColumns: {
+        'project-grid' : 'repeat(auto-fit, minmax(270px, 1fr))',
+        'project-grid-large' : 'repeat(auto-fit, minmax(320px, 1fr))',
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translate(0,0)" },
+          "50%": { transform: "translate(0,5px)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle .3s ease-out",
       },
     },
   },

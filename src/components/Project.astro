@@ -1,0 +1,10 @@
+---
+import Card from '../components/Card.astro'
+import data from '../json/projects.json'
+---
+<div id="projects" class="p-4">
+  <h2 class="text-xl font-bold mt-8 mb-4"><span class="text-sky-500"># </span>Proyectos</h2>
+  <ul class="flex sm:grid sm:grid-cols-project-grid lg:grid-cols-project-grid-large gap-4 overflow-x-auto snap-mandatory snap-x">
+    { data.map((card) => <Card title={card.title} description={card.description} poster={card.poster} code={card.code} demo={card.demo} />)}
+  </ul>
+</div>

@@ -1,0 +1,18 @@
+---
+import { main, secondary, tools } from '../json/skills.json'
+console.log({main})
+---
+<div id="skills" class="p-4">
+  <h2 class="text-xl font-bold mt-8 mb-4"><span class="text-sky-500"># </span>Habilidades</h2>
+  <div class="flex justify-center flex-wrap gap-8">
+    { main.map(skill => <div class="w-16"><img src={`skills/${skill}`} alt={skill}/></div>)}
+  </div>
+  <h3 class="text-center mt-8 mb-4">Aprendiendo</h3>
+  <div class="flex justify-center flex-wrap gap-8">
+    { secondary.map(skill => <div class="w-16"><img src={`skills/${skill}`} alt={skill}/></div>)}
+  </div>
+  <h3 class="text-center mt-8 mb-4">Herramientas</h3>
+  <div class="flex justify-center flex-wrap gap-8">
+    { tools.map(skill => <div class="w-16"><img src={`skills/${skill}`} alt={skill}/></div>)}
+  </div>
+</div>

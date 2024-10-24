@@ -1,0 +1,20 @@
+---
+import Button from '../components/Button.astro'
+interface Props {
+  title: string;
+  description: string;
+  poster: string;
+  code: string;
+  demo: string;
+}
+const {title, description, poster, code, demo} = Astro.props
+---
+<li class="min-w-[265px] flex flex-col gap-2 border border-sky-500 rounded-md p-4 backdrop-brightness-75 snap-center">
+  <img src={poster} alt="">
+  <h2 class="font-bold">{title}</h2>
+  <p>{description}</p>
+  <div class="flex gap-2">
+    <Button title="Código" icon="github.svg" link={code}/>
+    <Button title="Demo" icon="arrow-up-right.svg" link={demo}/>
+  </div>
+</li>

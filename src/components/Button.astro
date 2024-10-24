@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  icon: string;
+  link: string;
+}
+
+const { title, icon, link} = Astro.props
+---
+
+<a 
+  class="flex gap-2 items-center justify-between px-3 py-2 border rounded-md hover:cursor-pointer hover:bg-sky-700"
+  href={link}
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <div class="w-4">
+    <img src={icon} alt="logo-github">
+  </div>
+  <p>{ title }</p>
+</a>

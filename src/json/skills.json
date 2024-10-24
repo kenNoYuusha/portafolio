@@ -1,0 +1,5 @@
+{
+  "main": ["html.svg", "css.svg", "js.svg", "react.svg", "tailwind.svg", "php.svg", "mysql.svg"],
+  "secondary" : ["astro.svg", "storybook.svg", "figma.svg"],
+  "tools" : ["git.svg", "github.svg", "vscode.svg"]
+}
