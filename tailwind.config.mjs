@@ -25,8 +25,8 @@ export default {
         firaCode : ['Fira Code', 'monospace']
       },
       gridTemplateColumns: {
-        'project-grid' : 'repeat(auto-fit, minmax(270px, 1fr))',
-        'project-grid-large' : 'repeat(auto-fit, minmax(320px, 1fr))',
+        'project-grid' : 'repeat(auto-fill, minmax(270px, 1fr))',
+        'project-grid-large' : 'repeat(auto-fill, minmax(320px, 1fr))',
       },
       keyframes: {
         wiggle: {
