@@ -5,5 +5,12 @@
     "poster": "proyectos/todo-list.webp",
     "code" : "https://github.com/kenNoYuusha/to-do-list",
     "demo" : "https://kennoyuusha.github.io/to-do-list/"
+  },
+  {
+    "title": "Quiz App",
+    "description" : "Aplicación de preguntas y respuestas hecha en react usando MUI como interfaz grafica y zustand para manejar el estado global el estilo dark mode se adapta a la configuración del sistema",
+    "poster": "proyectos/quiz-app.webp",
+    "code" : "https://github.com/kenNoYuusha/quiz-app",
+    "demo" : "https://kennoyuusha.github.io/quiz-app/"
   }
 ]
