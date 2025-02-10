@@ -1,33 +1,39 @@
 ---
 interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="logo.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Soy un entusiasta del diseño web que disfruta transformando ideas en realidad a travéz del código. Con experiencia en HTML, CSS y Javascript, me dedico a construir sitios web que no solo se ven bien, sino que también ofrecen una experiencia de usuario fluida y accesible.">
-		<meta name="generator" content={Astro.generator} />
-		<title>{ title }</title>
-	</head>
-	<body class="bg-mainBackground text-white font-firaCode">
-		<header class="w-full max-w-7xl mx-auto">
-			<slot name="slot-header"/>
-		</header>
-		<main class="w-full max-w-7xl mx-auto">
-				<slot />
-		</main>
-		<footer class="w-full max-w-7xl mx-auto">
-				<slot name="slot-footer"/>
-		</footer>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desarrollador frontend con experiencia en HTML, CSS y JavaScript, enfocado en crear interfaces funcionales, accesibles y con un diseño atractivo. Me gusta convertir ideas en soluciones web, priorizando tanto la estética como la usabilidad. Estoy en busca de oportunidades donde pueda colaborar y seguir creciendo profesionalmente"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-mainBackground text-white font-firaCode w-full">
+    <header class="w-full">
+      <slot name="slot-header" />
+    </header>
+    <main class="container mx-auto max-w-screen-xl">
+      <slot />
+    </main>
+    <footer class="w-full">
+      <slot name="slot-footer" />
+    </footer>
+  </body>
 </html>

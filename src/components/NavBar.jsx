@@ -1,45 +1,44 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from "react";
 export const NavBar = () => {
-
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
   const buttonMenuRef = useRef(null);
   const showMenuToogle = () => {
-    setShowMenu(prev => !prev);
-  }
-  
+    setShowMenu((prev) => !prev);
+  };
 
-  useEffect(()=> {
+  useEffect(() => {
     const handleClickOutside = (event) => {
-
-      if(!menuRef.current.contains(event.target) && !buttonMenuRef.current.contains(event.target)){
+      if (
+        !menuRef.current.contains(event.target) &&
+        !buttonMenuRef.current.contains(event.target)
+      ) {
         setShowMenu(false);
       }
+    };
 
-    }
-    
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="bg-white border-gray-200 px-4 sm:px-6 py-2.5 dark:bg-transparent backdrop-brightness-75">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <div className="container flex flex-wrap justify-between items-center mx-auto max-w-screen-lg">
         <a href="#" className="flex items-center">
-          {<img
-            src="logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
-          />}
+          {
+            <img
+              src="logo.svg"
+              className="mr-3 h-6 sm:h-9"
+              alt="Flowbite Logo"
+            />
+          }
           {/* <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
             Jorge Luis
           </span> */}
         </a>
         <div className="flex items-center sm:order-2">
-         
           <button
             onClick={showMenuToogle}
             data-collapse-toggle="mobile-menu-2"
@@ -77,7 +76,7 @@ export const NavBar = () => {
           </button>
         </div>
         <div
-          className={`${ showMenu === false && 'hidden' } justify-between items-center w-full sm:flex sm:w-auto sm:order-1`}
+          className={`${showMenu === false && "hidden"} justify-between items-center w-full sm:flex sm:w-auto sm:order-1`}
           id="mobile-menu-2"
           ref={menuRef}
         >
@@ -106,7 +105,6 @@ export const NavBar = () => {
                 Habilidades
               </a>
             </li>
-           
           </ul>
         </div>
       </div>
