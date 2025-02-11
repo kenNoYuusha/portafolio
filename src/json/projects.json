@@ -12,5 +12,12 @@
     "poster": "proyectos/quiz-app.webp",
     "code" : "https://github.com/kenNoYuusha/quiz-app",
     "demo" : "https://kennoyuusha.github.io/quiz-app/"
+  },
+  {
+    "title": "Pelis app",
+    "description": "Aplicacion de peliculas hecha en react usando la api de themoviedb, se pueden buscar peliculas y ver su informacion",
+    "poster": "proyectos/pelis-app.webp",
+    "code": "https://github.com/kenNoYuusha/pelis-app",
+    "demo": "https://kennoyuusha.github.io/pelis-app/" 
   }
 ]
