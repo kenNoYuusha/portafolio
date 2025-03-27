@@ -4,7 +4,7 @@ interface Props {
   title: string;
   description: string;
   poster: string;
-  code: string;
+  code: string | undefined;
   demo: string;
 }
 const {title, description, poster, code, demo} = Astro.props
