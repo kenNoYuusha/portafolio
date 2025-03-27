@@ -1,5 +1,11 @@
 [
   {
+    "title": "Catálogo La Montaña",
+    "description" : "Landing Page para la empresa la Montaña Huehuetenango con catálogo hecho en wordpress ",
+    "poster": "proyectos/lamontana.webp",
+    "demo" : "https://lamontanagt.com"
+  },
+  {
     "title": "Todo List",
     "description" : "To-do list hecha en react y tailwind, usando localStorage como persistencia de datos viene con switch para darkmode",
     "poster": "proyectos/todo-list.webp",
